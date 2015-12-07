@@ -1,0 +1,31 @@
+/* NAVIGATION */
+.navbar{
+    height: 100px;
+    position: relative;
+}
+.navbar-header, .navbar-brand{
+    height: 100px;
+}
+.navbar img{
+   height: 100%;
+}
+.pages{
+    margin: 0 5%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.pages li{
+    height: 50%;
+}
+.navbar .search{
+    width: 30%;
+    margin: 0 1%;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+}
+.navbar .account{
+    clear: both;
+}
