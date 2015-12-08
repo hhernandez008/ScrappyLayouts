@@ -11,16 +11,19 @@
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular.min.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylesheets/navStyle.css">
+    <link rel="stylesheet" href="stylesheets/homeStyle.css">
+
 </head>
 <body>
-    <nav class="navbar navbar-default">
-        <div class="navbar-header">
-            <a class="navbar-brand" href="#">
-                <img src="images/ScrappyLayoutLogo.png">
-            </a>
-        </div>
-            <ul class="nav navbar-nav pages">
+    <div class="container-fluid">
+        <nav class="navbar navbar-default">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                    <img src="images/ScrappyLayoutLogo.png">
+                </a>
+            </div>
+            <ul id="pages" class="nav navbar-nav">
                 <li class="active">
                     <a href="#">Home</a>
                 </li>
@@ -38,21 +41,17 @@
                     </span>
                 </div>
             </div>
-        <!--<div>
-            <ul class="nav navbar-nav navbar-right account">
-                <li>
-                    <a href="#">Sign-In</a>
-                </li>
-            </ul>
-        </div>-->
-    </nav>
+        </nav>
 
-    <div class="row">
-        <div class="col-xs-12 col-md-8">
+        <div class="row">
+            <!-- New Layout picker & Popular Layout Display -->
+            <div class="col-xs-12 col-md-8">
 
-        </div>
-        <div class="col-xs-12 col-md-4">
+            </div>
+            <!-- User Designs -->
+            <div class="col-xs-12 col-md-4">
 
+            </div>
         </div>
     </div>
 </body>
