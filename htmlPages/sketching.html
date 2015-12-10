@@ -1,10 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="scrappyLayouts">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>Layout Sketching</title>
+    <meta name="viewport" content="initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular.min.js"></script>
+    
+    <link rel="stylesheet" href="../stylesheets/navStyle.css">
+    <link rel="stylesheet" href="../stylesheets/homeStyle.css">
+    
+    <script src="../script/appAndServices.js"></script>
+    <script src="../script/directives.js"></script>
+    <script src="../script/controller.js"></script>
 </head>
-<body>
+<body ng-controller="mainCtrl as MC">
+    <div class="container" ng-controller="homeCtrl as hc">
+        <div ng-hide="true">{{MC.setPageName('Layout Sketching')}}</div>
+        <data-navigation></data-navigation>
 
+    </div>
 </body>
 </html>

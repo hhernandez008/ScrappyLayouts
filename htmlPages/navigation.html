@@ -1,21 +1,12 @@
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default" ng-controller="navCtrl as nc">
     <div class="navbar-header">
         <a class="navbar-brand" href="#">
             <img src="../images/ScrappyLayoutLogo2.png">
         </a>
     </div>
     <ul id="pages" class="nav navbar-nav">
-        <li class="active">
-            <a href="#">Home</a>
-        </li>
-        <li>
-            <a href="#">Layout Sketching</a>
-        </li>
-        <li>
-            <a href="#">Design Gallery</a>
-        </li>
-        <li class="userLogin">
-            <a href="#">Login</a>
+        <li ng-repeat="page in nc.pages" ng-class="{active: nc.activePage(MC.currPage, page.page)};">
+            <a ng-href="{{page.link}}">{{page.page}}</a>
         </li>
     </ul>
     <div class="nav navbar-nav search">

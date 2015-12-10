@@ -18,8 +18,9 @@
     <script src="../script/directives.js"></script>
     <script src="../script/controller.js"></script>
 </head>
-<body ng-controller="homeCtrl as hc">
-    <div class="container">
+<body ng-controller="mainCtrl as MC">
+    <div class="container" ng-controller="homeCtrl as hc">
+        <div ng-hide="true">{{MC.setPageName('Home')}}</div>
         <data-navigation></data-navigation>
 
         <div id="mainContent" class="row">
