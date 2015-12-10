@@ -5,7 +5,7 @@
         </a>
     </div>
     <ul id="pages" class="nav navbar-nav">
-        <li ng-repeat="page in nc.pages" ng-class="{active: nc.activePage(MC.currPage, page.page)};">
+        <li ng-repeat="page in nc.pages" ng-class="{active: nc.activePage(page.link)};">
             <a ng-href="{{page.link}}">{{page.page}}</a>
         </li>
     </ul>

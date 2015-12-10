@@ -20,7 +20,7 @@
 </head>
 <body ng-controller="mainCtrl as MC">
     <div class="container" ng-controller="homeCtrl as hc">
-        <div ng-hide="true">{{MC.setPageName('Home')}}</div>
+
         <data-navigation></data-navigation>
 
         <div id="mainContent" class="row">
@@ -45,56 +45,38 @@
                         </a></div>
                     </div>
                 </div>
-                <div class="pastLayouts">
+                <div class="pastLayouts" ng-controller="pastDesignsCtrl as pdc">
                     <div class="headContain">
                         <header>Past Designs</header>
                     </div>
-                    <div><a href="">
-                        <p>Design 1</p>
-                        <div class="pastPage"></div>
-                    </a></div>
-                    <div><a href="">
-                        <p>Design 2</p>
-                        <div class="pastPage"></div>
-                    </a></div>
-                    <div><a href="">
-                        <p>Design 3</p>
-                        <div class="pastPage"></div>
-                    </a></div>
-                    <div><a href="">
-                        <p>Design 4</p>
-                        <div class="pastPage"></div>
-                    </a></div>
-                    <div><a href="">
-                        <p>Design 5</p>
-                        <div class="pastPage"></div>
-                    </a></div>
-                    <div><a href="">
-                        <p>Design 6</p>
-                        <div class="pastPage"></div>
-                    </a></div>
+                    <div ng-repeat="page in pdc.pastPagesSummary">
+                        <a ng-href="{{page.link}}">
+                            <p>{{page.title}}</p>
+                            <div class="pastPage"><img ng-src="{{page.pageSrc}}"></div>
+                        </a>
+                    </div>
                 </div>
             </div>
             <!-- User Designs -->
             <div class="col-md-5">
-                <div id="userInfo">
+                <div id="userInfo" ng-controller="userSnapshotCtrl as usc">
                     <div class="headContain">
-                        <header>User Name</header>
+                        <header>{{usc.user.name}}</header>
                     </div>
                     <div>
                         <table class="userStats table">
                             <thead>
                                 <tr>
                                     <th>Pages Created</th>
-                                    <th>Pages Starred</th>
-                                    <th>Your Stars</th>
+                                    <th>Stars Earned</th>
+                                    <th>Favorites</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td>0</td>
-                                    <td>0</td>
-                                    <td>0</td>
+                                    <td>{{usc.stats.created}}</td>
+                                    <td>{{usc.stats.stars}}</td>
+                                    <td>{{usc.stats.saved}}</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -104,22 +86,12 @@
                             <header>Saved Pages</header>
                         </div>
                         <div class="pastLayouts">
-                            <div><a href="">
-                                <p>Design 1</p>
-                                <div class="pastPage"></div>
-                            </a></div>
-                            <div><a href="">
-                                <p>Design 2</p>
-                                <div class="pastPage"></div>
-                            </a></div>
-                            <div><a href="">
-                                <p>Design 3</p>
-                                <div class="pastPage"></div>
-                            </a></div>
-                            <div><a href="">
-                                <p>Design 4</p>
-                                <div class="pastPage"></div>
-                            </a></div>
+                            <div ng-repeat="page in usc.pagesSummary">
+                                <a ng-href="{{page.link}}">
+                                    <p>{{page.title}}</p>
+                                    <div class="pastPage"><img ng-src="{{page.pageSrc}}"></div>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
