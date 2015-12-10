@@ -1,5 +1,8 @@
 var app = angular.module("scrappyLayouts");
 
-app.controller("mainCtrl", function(){
+app.controller("navCtrl", function(){
+
+
+}).controller("homeCtrl", function(){
 
 });

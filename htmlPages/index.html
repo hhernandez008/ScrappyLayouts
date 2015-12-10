@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="scrappyLayouts">
 <head>
     <meta charset="UTF-8">
     <title>Scrappy Layouts</title>
@@ -9,45 +9,18 @@
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular.min.js"></script>
-    <link rel="stylesheet" href="stylesheets/navStyle.css">
-    <link rel="stylesheet" href="stylesheets/homeStyle.css">
 
+    <link rel="stylesheet" href="../stylesheets/navStyle.css">
+    <link rel="stylesheet" href="../stylesheets/homeStyle.css">
+
+    <script src="../script/appAndServices.js"></script>
+    <script src="../script/directives.js"></script>
+    <script src="../script/controller.js"></script>
 </head>
-<body>
+<body ng-controller="homeCtrl as hc">
     <div class="container">
-        <nav class="navbar navbar-default">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="#">
-                    <img src="images/ScrappyLayoutLogo2.png">
-                </a>
-            </div>
-            <ul id="pages" class="nav navbar-nav">
-                <li class="active">
-                    <a href="#">Home</a>
-                </li>
-                <li>
-                    <a href="#">Layout Sketching</a>
-                </li>
-                <li>
-                    <a href="#">Design Gallery</a>
-                </li>
-                <li class="userLogin">
-                    <a href="#">Login</a>
-                </li>
-            </ul>
-            <div class="nav navbar-nav search">
-                <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Search...">
-                    <span class="input-group-btn">
-                        <button type="button" class="btn btn-default">
-                            <span class="glyphicon glyphicon-search"></span>
-                        </button>
-                    </span>
-                </div>
-            </div>
-        </nav>
+        <data-navigation></data-navigation>
 
         <div id="mainContent" class="row">
             <!-- New Layout picker & Popular Layout Display -->
