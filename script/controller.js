@@ -1,8 +1,6 @@
 var app = angular.module("scrappyLayouts");
 
-app.controller("mainCtrl", function(){
-
-}).controller("navCtrl", function($location){
+app.controller("navCtrl", function($location){
     this.pages = [
         {page: "Home", link:"index.html"},
         {page: "Layout Sketching", link:"sketching.html"},
@@ -15,8 +13,6 @@ app.controller("mainCtrl", function(){
         currPage = currPage.substr(lastSlash + 1);
         return currPage == pageLink;
     }
-
-}).controller("homeCtrl", function(){
 
 }).controller("pastDesignsCtrl", function(){
     this.pastPagesSummary = [
