@@ -16,57 +16,32 @@
 
 </head>
 <body>
-    <div class="col-md-5">
-        <div id="userInfo">
-            <header>User Name</header>
-            <div>
-                <table class="userStats table">
-                    <thead>
-                        <tr>
-                            <th>Pages Created</th>
-                            <th>Pages Starred</th>
-                            <th>Your Stars</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>#</td>
-                            <td>#</td>
-                            <td>#</td>
-                        </tr>
-                    </tbody>
-                </table>
+    <div class="container">
+        <nav class="navbar navbar-default">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                    <img src="images/ScrappyLayoutLogo2.png">
+                </a>
             </div>
-            <div id="userPages">
-                <header>Saved Pages</header>
-                <div class="pastLayouts">
-                    <div><a href="">
-                        <p>Design 1</p>
-                        <div class="pastPage"></div>
-                    </a></div>
-                    <div><a href="">
-                        <p>Design 2</p>
-                        <div class="pastPage"></div>
-                    </a></div>
-                    <div><a href="">
-                        <p>Design 3</p>
-                        <div class="pastPage"></div>
-                    </a></div>
-                    <div><a href="">
-                        <p>Design 4</p>
-                        <div class="pastPage"></div>
-                    </a></div>
-                    <div><a href="">
-                        <p>Design 5</p>
-                        <div class="pastPage"></div>
-                    </a></div>
-                    <div><a href="">
-                        <p>Design 6</p>
-                        <div class="pastPage"></div>
-                    </a></div>
+            <div class="nav navbar-nav search">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search...">
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                    </span>
                 </div>
             </div>
-        </div>
+            <ul id="pages" class="nav navbar-nav">
+                <li class="active">
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">Layout Sketching</a>
+                </li>
+            </ul>
+        </nav>
     </div>
 </body>
 </html>

@@ -1,15 +1,18 @@
 body{
     overflow-x: hidden;
     background-color: #fcfcfc;
+    color: #000000;
 }
 /* NAVIGATION */
 .navbar{
-    height: 100px;
+    height: 100%;
     position: relative;
-    background-color: rgba(255, 255, 255, 0.8);
-    border: none;
-    border-bottom: 1px solid #e7e7e7;
-    border-radius: 0;
+    background-color: rgba(163, 95, 193, 0.2);
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #000000;
 }
 .navbar-header{
     height: 100px;
@@ -20,35 +23,47 @@ body{
     height: 100%;
 }
 .navbar img{
-   height: 100%;
+    height: 100%;
 }
 #pages{
-    margin: 0 5%;
+    clear: both;
+    margin: 0 5% 1% 5%;
     height: 100%;
+    width: 90%;
     display: flex;
     align-items: center;
+    font-weight: bold;
+    font-size: 1em;
 }
 #pages li{
-    height: 50%;
     margin: 0 2%;
     white-space: nowrap;
 }
+#pages li:last-child{
+    position: absolute;
+    right: 0;
+    border-radius: 10%;
+    border: 1px solid #781e9f;
+    background-color: #f9fe77;
+}
 #pages>li>a:hover{
-    background-color: rgba(194, 241, 114, 0.5);
+    background-color: rgb(175, 234, 73);
     -webkit-border-radius: 10%;
     -moz-border-radius: 10%;
     border-radius: 10%;
+    color: #000000;
 }
 #pages>.active>a{
+    color: #000000;
     border-radius: 10%;
-    background-color: rgba(222, 104, 164, 0.8);
+    background-color: rgb(222, 104, 164);
 }
 .navbar .search{
     width: 30%;
     margin: 0 1%;
     position: absolute;
-    top: 50%;
-    right: 0;
+    top: 30%;
+    right: 2%;
     transform: translate(0, -50%);
 }
 .navbar .account{
@@ -58,9 +73,9 @@ body{
 /* SEARCH BAR */
 .search input.form-control:focus{
     border-color: rgba(194, 241, 114, 0.8);
-    -webkit-box-shadow: inset 0 1px 1px transparent, 0 0 10px rgba(194, 241, 114, 0.6);
-    -moz-box-shadow: inset 0 1px 1px transparent, 0 0 10px rgba(194, 241, 114, 0.6);
-    box-shadow: inset 0 1px 1px transparent, 0 0 10px rgba(194, 241, 114, 0.6);
+    -webkit-box-shadow: inset 0 1px 1px transparent, 0 0 20px rgb(194, 241, 114);
+    -moz-box-shadow: inset 0 1px 1px transparent, 0 0 20px rgb(194, 241, 114);
+    box-shadow: inset 0 1px 1px transparent, 0 0 20px rgb(194, 241, 114);
 }
 
 .search .btn-default:hover{
