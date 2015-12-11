@@ -1,47 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="scrappyLayouts">
 <head>
     <meta charset="UTF-8">
     <title>SCRATCHPAD</title>
     <meta name="viewport" content="initial-scale=1, user-scalable=no">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
-
+    
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular.min.js"></script>
-    <link rel="stylesheet" href="stylesheets/navStyle.css">
-    <link rel="stylesheet" href="stylesheets/homeStyle.css">
-
+    
+    <link rel="stylesheet" href="../stylesheets/navStyle.css">
+    
+    
+    <script src="../script/appAndServices.js"></script>
+    <script src="../script/directives.js"></script>
+    <script src="../script/controller.js"></script>
 </head>
 <body>
+    <!-- LEFT SIDE LAYOUT -->
     <div class="container">
-        <nav class="navbar navbar-default">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="#">
-                    <img src="images/ScrappyLayoutLogo2.png">
-                </a>
-            </div>
-            <div class="nav navbar-nav search">
-                <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Search...">
-                    <span class="input-group-btn">
-                        <button type="button" class="btn btn-default">
-                            <span class="glyphicon glyphicon-search"></span>
-                        </button>
-                    </span>
-                </div>
-            </div>
-            <ul id="pages" class="nav navbar-nav">
-                <li class="active">
-                    <a href="#">Home</a>
-                </li>
-                <li>
-                    <a href="#">Layout Sketching</a>
-                </li>
-            </ul>
-        </nav>
+        <data-navigation></data-navigation>
+
+        <div class="col-md-9 pull-right">
+            <!-- Main Page Display -->
+        </div>
+        <div class="col-md-3">
+            <!-- Page Editor -->
+        </div>
     </div>
 </body>
 </html>

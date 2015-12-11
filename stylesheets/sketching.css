@@ -1,0 +1,11 @@
+.col-md-3 {
+    border: 1px solid red;
+    height: 200px;
+}
+
+#sheet{
+    border: 1px solid black;
+    height: 80vh;
+    margin: 15px;
+    background-color: #e7e7e7;
+}
