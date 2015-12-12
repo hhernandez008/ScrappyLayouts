@@ -13,7 +13,6 @@
     
     <link rel="stylesheet" href="../stylesheets/navStyle.css">
     <link rel="stylesheet" href="../stylesheets/sketching.css">
-
     
     <script src="../script/appAndServices.js"></script>
     <script src="../script/directives.js"></script>
@@ -26,8 +25,10 @@
         <div class="row">
             <div class="col-md-9">
                 <!-- Main Page Display -->
-                <div id="sheet">
-                    Drag & Drop to sheet
+                <div id="sheetContainer">
+                    <div id="sheet" class="square">
+                        Drag & Drop to sheet
+                    </div>
                 </div>
             </div>
             <div class="col-md-3">
@@ -35,11 +36,11 @@
                 <div class="panel-group" id="editAccordion">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <h3 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#editAccordion" href="#pictureSize">
+                            <a data-toggle="collapse" data-parent="#editAccordion" href="#pictureSize">
+                                <h3 class="panel-title">
                                     Photo Sizes
-                                </a>
-                            </h3>
+                                </h3>
+                            </a>
                         </div>
                         <div id="pictureSize" class="panel-collapse collapse in">
                             <div class="panel-body">
@@ -49,11 +50,11 @@
                     </div>
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <h3 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#editAccordion" href="#embellishments">
+                            <a data-toggle="collapse" data-parent="#editAccordion" href="#embellishments">
+                                <h3 class="panel-title">
                                     Embellishments
-                                </a>
-                            </h3>
+                                </h3>
+                            </a>
                         </div>
                         <div id="embellishments" class="panel-collapse collapse">
                             <div class="panel-body">
@@ -63,11 +64,11 @@
                     </div>
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <h3 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#editAccordion" href="#journaling">
+                            <a data-toggle="collapse" data-parent="#editAccordion" href="#journaling">
+                                <h3 class="panel-title">
                                     Journaling
-                                </a>
-                            </h3>
+                                </h3>
+                            </a>
                         </div>
                         <div id="journaling" class="panel-collapse collapse">
                             <div class="panel-body">
@@ -77,11 +78,11 @@
                     </div>
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <h3 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#editAccordion" href="#titles">
+                            <a data-toggle="collapse" data-parent="#editAccordion" href="#titles">
+                                <h3 class="panel-title">
                                     Titles
-                                </a>
-                            </h3>
+                                </h3>
+                            </a>
                         </div>
                         <div id="titles" class="panel-collapse collapse">
                             <div class="panel-body">

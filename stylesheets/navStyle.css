@@ -3,6 +3,9 @@ body{
     background-color: #fcfcfc;
     color: #000000;
 }
+.row{
+    margin: 20px 0;
+}
 /* NAVIGATION */
 .navbar{
     height: 100%;

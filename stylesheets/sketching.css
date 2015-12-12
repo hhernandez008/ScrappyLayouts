@@ -1,11 +1,20 @@
-.col-md-3 {
-    border: 1px solid red;
-    height: 200px;
+.row{
+    margin: 15px 0;
 }
+#sheetContainer{
+    border: 1px solid #e7e7e7;
+    border-radius: 4px;
+    padding: 15px;
+    background-color: rgba(163, 95, 193, 0.2);
+}
+#sheet.square{
+    width: 100%;
+    padding-bottom: 99.5%;
+    border: 2px solid #e7e7e7;
+    box-shadow: 5px 5px 5px #a1a1a1;
+    background-color: #ffffff;
+    position: relative;
+}
+#sheet.rectangle{
 
-#sheet{
-    border: 1px solid black;
-    height: 80vh;
-    margin: 15px;
-    background-color: #e7e7e7;
 }
