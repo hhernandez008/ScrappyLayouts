@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="scrappyLayouts">
+<head>
+    <meta charset="UTF-8">
+    <title>SCRATCHPAD</title>
+    <meta name="viewport" content="initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular.min.js"></script>
+    
+    <link rel="stylesheet" href="../stylesheets/navStyle.css">
+    <link rel="stylesheet" href="../stylesheets/sketching.css">
+
+    <script src="../script/appAndServices.js"></script>
+    <script src="../script/directives.js"></script>
+    <script src="../script/controller.js"></script>
+</head>
+<body>
+    <!-- LEFT SIDE LAYOUT -->
+    <div class="container">
+        <data-navigation></data-navigation>
+
+        <div class="row">
+            <div class="col-md-9 pull-right">
+                <!-- Main Page Display -->
+                <div id="sheetContainer">
+                    <div id="sheet" class="square">
+                        Drag & Drop to sheet
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <!-- Page Editor -->
+                <div class="panel-group" id="editAccordion">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <a data-toggle="collapse" data-parent="#editAccordion" href="#pictureSize">
+                                <h3 class="panel-title">
+                                    Photo Sizes
+                                </h3>
+                            </a>
+                        </div>
+                        <div id="pictureSize" class="panel-collapse collapse in">
+                            <div class="panel-body">
+                                Drag a picture size to use from this area.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <a data-toggle="collapse" data-parent="#editAccordion" href="#embellishments">
+                                <h3 class="panel-title">
+                                    Embellishments
+                                </h3>
+                            </a>
+                        </div>
+                        <div id="embellishments" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                Drag an embellishment to use from this area.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <a data-toggle="collapse" data-parent="#editAccordion" href="#journaling">
+                                <h3 class="panel-title">
+                                    Journaling
+                                </h3>
+                            </a>
+                        </div>
+                        <div id="journaling" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                Drag journal shapes to use from this area.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <a data-toggle="collapse" data-parent="#editAccordion" href="#titles">
+                                <h3 class="panel-title">
+                                    Titles
+                                </h3>
+                            </a>
+                        </div>
+                        <div id="titles" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                Drag page titles to use from this area.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
