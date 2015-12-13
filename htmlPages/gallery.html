@@ -12,16 +12,47 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.5/angular.min.js"></script>
 
     <link rel="stylesheet" href="../stylesheets/navStyle.css">
-    <link rel="stylesheet" href="../stylesheets/homeStyle.css">
+    <link rel="stylesheet" href="../stylesheets/gallery.css">
 
     <script src="../script/appAndServices.js"></script>
     <script src="../script/directives.js"></script>
     <script src="../script/controller.js"></script>
 </head>
 <body>
-    <div class="container">
+    <div class="container" ng-controller="pastDesignsCtrl as pdc">
         <data-navigation></data-navigation>
-
+        <div class="row">
+            <div class="col-xs-12">
+                <div id="gallNav">
+                    <div>
+                        <header>Sketch Gallery</header>
+                        <div id="gallSearch">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search...">
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-default">
+                                        <span class="glyphicon glyphicon-search"></span>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="sortBy">
+                        <li>All</li>
+                        <li>Stars</li>
+                        <li>Date Added</li>
+                    </ul>
+                </div>
+                <div id="gallContainer">
+                    <div ng-repeat="page in pdc.pastPagesFull">
+                        <a ng-href="{{page.link}}">
+                            <p>{{page.title}}</p>
+                            <div class="pastPage"><img ng-src="{{page.pageSrc}}"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
