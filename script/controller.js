@@ -15,14 +15,6 @@ app.controller("navCtrl", function($location){
     }
 
 }).controller("pastDesignsCtrl", function(){
-    this.pastPagesSummary = [
-        {title: "Design 1", link: "#", pageSrc: "../images/dummySketches/Design2.jpg"},
-        {title: "Design 2", link: "#", pageSrc: "../images/dummySketches/Design8.jpg"},
-        {title: "Design 3", link: "#", pageSrc: "../images/dummySketches/Design7.jpg"},
-        {title: "Design 4", link: "#", pageSrc: "../images/dummySketches/Design4.jpg"},
-        {title: "Design 5", link: "#", pageSrc: "../images/dummySketches/Design10.jpg"},
-        {title: "Design 6", link: "#", pageSrc: "../images/dummySketches/Design3.jpg"}
-    ];
     this.pastPagesFull = [
         {title: "Design 1", link: "#", pageSrc: "../images/dummySketches/Design2.jpg"},
         {title: "Design 2", link: "#", pageSrc: "../images/dummySketches/Design8.jpg"},
@@ -34,6 +26,14 @@ app.controller("navCtrl", function($location){
         {title: "Design 8", link: "#", pageSrc: "../images/dummySketches/Design1.jpg"},
         {title: "Design 9", link: "#", pageSrc: "../images/dummySketches/Design9.jpg"},
         {title: "Design 10", link: "#", pageSrc: "../images/dummySketches/Design5.jpg"}
+    ];
+    this.pastPagesSummary = [
+        {title: "Design 1", link: "#", pageSrc: "../images/dummySketches/Design2.jpg"},
+        {title: "Design 2", link: "#", pageSrc: "../images/dummySketches/Design8.jpg"},
+        {title: "Design 3", link: "#", pageSrc: "../images/dummySketches/Design7.jpg"},
+        {title: "Design 4", link: "#", pageSrc: "../images/dummySketches/Design4.jpg"},
+        {title: "Design 5", link: "#", pageSrc: "../images/dummySketches/Design10.jpg"},
+        {title: "Design 6", link: "#", pageSrc: "../images/dummySketches/Design3.jpg"}
     ];
 
 }).controller("userSnapshotCtrl", function(){
